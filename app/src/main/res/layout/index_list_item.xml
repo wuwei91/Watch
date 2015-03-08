@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:padding="5dp"
+        android:textSize="25sp"
+        android:text="1"
+        android:id="@+id/indexItemNum"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/index_alarm"
+        android:id="@+id/indexItemImg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/indexItemBut"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/indexItemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/indexItemNum"
+        android:layout_toLeftOf="@id/indexItemBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--开始时间-->
+        <TextView
+            android:id="@+id/startTimeText"
+            android:text="@string/start_time"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_toRightOf="@id/startTimeText"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--结束时间-->
+        <TextView
+            android:id="@+id/endTimeText"
+            android:text="@string/end_time"
+            android:textSize="25sp"
+            android:layout_below="@id/startTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_below="@id/startTime"
+            android:textSize="25sp"
+            android:layout_alignTop="@id/endTimeText"
+            android:layout_toRightOf="@id/endTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

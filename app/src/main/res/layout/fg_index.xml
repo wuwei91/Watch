@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/logBg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/weatherImg"
+            android:src="@drawable/weather_img"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextClock
+            android:id="@+id/textClockYear"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextClock
+            android:layout_alignBottom="@id/weatherImg"
+            android:paddingLeft="30dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/textClockTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/indexListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
